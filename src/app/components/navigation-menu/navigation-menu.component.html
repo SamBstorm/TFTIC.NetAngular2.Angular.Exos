@@ -2,13 +2,13 @@
 <nav>
     <ul>
         <li>
-            <a routerLink="/demo">
-                <div>Démonstrations</div>
+            <a [routerLink]="routes[0].route">
+                <div>{{routes[0].name}}</div>
             </a>
         </li>
         <li>
-            <a routerLink="/exos">
-                <div>Exercices</div>
+            <a [routerLink]="routes[1].route">
+                <div>{{routes[1].name}}</div>
             </a>
         </li>
     </ul>
