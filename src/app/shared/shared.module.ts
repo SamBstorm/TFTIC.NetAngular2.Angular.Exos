@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ToFahrenheitPipe } from '../shared/pipes/to-fahrenheit.pipe';
 import { ChronoViewPipe } from '../shared/pipes/chrono-view.pipe';
 import { RandomColorDirective } from '../shared/directives/random-color.directive';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,12 +14,14 @@ import { RandomColorDirective } from '../shared/directives/random-color.directiv
     RandomColorDirective
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports:[
     ToFahrenheitPipe,
     ChronoViewPipe,
-    RandomColorDirective
+    RandomColorDirective,
+    FormsModule
   ]
 })
 export class SharedModule { }

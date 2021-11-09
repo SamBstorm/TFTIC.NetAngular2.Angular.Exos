@@ -28,7 +28,6 @@ import { InputOutputListComponent } from './components/input-output-list/input-o
   imports: [
     CommonModule,
     DemoRoutingModule,
-    FormsModule,
     SharedModule
   ],
   bootstrap:[MainDemoComponent]

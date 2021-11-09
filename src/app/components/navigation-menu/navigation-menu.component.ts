@@ -26,7 +26,8 @@ export class NavigationMenuComponent implements OnInit {
       ],
       imgSrc:"assets/home-icon.png"},
       {title:"Exercices", url: "/exos", isVisible:true, children:[
-        {title : "Chronomètre", url:'/exo_01', isVisible:true}
+        {title : "Chronomètre", url:'/exo_01', isVisible:true},
+        {title : "Shopping list", url:'/exo_02', isVisible:true}
       ]}
     ];
   }
