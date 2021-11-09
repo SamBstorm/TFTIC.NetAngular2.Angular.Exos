@@ -1,4 +1,7 @@
 export interface INavItem {
-    route: string;
-    name: string;
+    title: string;
+    url?: string;
+    isVisible? : boolean;
+    children? : INavItem[];
+    imgSrc?: string;
 }

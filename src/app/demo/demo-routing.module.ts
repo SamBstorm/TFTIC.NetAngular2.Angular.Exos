@@ -5,6 +5,7 @@ import { DemoDirectCompoComponent } from './components/demo-direct-compo/demo-di
 import { DemoDirectCustomComponent } from './components/demo-direct-custom/demo-direct-custom.component';
 import { DemoDirectStructComponent } from './components/demo-direct-struct/demo-direct-struct.component';
 import { DemoPipeComponent } from './components/demo-pipe/demo-pipe.component';
+import { InputOutputMainComponent } from './components/input-output-main/input-output-main.component';
 import { MainDemoComponent } from './components/main-demo/main-demo.component';
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'demo_02', component:DemoPipeComponent},
   {path:'demo_03', component:DemoDirectCompoComponent},
   {path:'demo_04', component:DemoDirectStructComponent},
-  {path:'demo_05', component:DemoDirectCustomComponent}
+  {path:'demo_05', component:DemoDirectCustomComponent},
+  {path:'demo_06', component:InputOutputMainComponent}
 ];
 
 @NgModule({

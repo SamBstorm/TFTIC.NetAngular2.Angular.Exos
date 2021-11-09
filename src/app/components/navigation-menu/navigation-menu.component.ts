@@ -13,8 +13,22 @@ export class NavigationMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.routes.push({name:"Démonstrations", route: "/demo"});
-    this.routes.push({name:"Exercices", route: "/exos"});
+    this.routes = [
+      {title:"Démonstrations", url: "/demo", isVisible:true, children :[
+        {title:"Binding Demo", url:'/demo_01', isVisible:true},
+        {title:"Pipe Demo", url:'/demo_02', isVisible:true},
+        {title:"Directives", isVisible:true, children:[
+          {title:"Directive Component Demo", url:'/demo_03', isVisible:true},
+          {title:"Directive Structural Demo", url:'/demo_04', isVisible:true},
+          {title:"Directive Custom Demo", url:'/demo_05', isVisible:true}
+        ]},
+        {title:"Input Output Demo", url : "/demo_06", isVisible : true}
+      ],
+      imgSrc:"assets/home-icon.png"},
+      {title:"Exercices", url: "/exos", isVisible:true, children:[
+        {title : "Chronomètre", url:'/exo_01', isVisible:true}
+      ]}
+    ];
   }
 
 }

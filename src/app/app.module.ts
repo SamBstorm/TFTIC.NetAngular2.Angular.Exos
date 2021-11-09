@@ -8,12 +8,14 @@ import { ExerciceRoutingModule } from './exercice/exercice-routing.module';
 import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SharedModule } from './shared/shared.module';
+import { NavItemComponent } from './components/nav-item/nav-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationMenuComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavItemComponent
   ],
   imports: [
     BrowserModule,
