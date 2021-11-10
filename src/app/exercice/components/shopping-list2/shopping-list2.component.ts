@@ -8,6 +8,9 @@ import { ShoppingService } from 'src/app/services/shopping.service';
 })
 export class ShoppingList2Component implements OnInit {
 
+  // Attention, la partie en commentaire est plus propre, mais il nous faudrait utiliser les BehaviorSubject 
+  //public list! : Map<string, number>;
+
   public get list() : Map<string,number>{
     return this._shopService.get();
   }
