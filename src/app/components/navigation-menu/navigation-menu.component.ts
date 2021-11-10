@@ -23,7 +23,8 @@ export class NavigationMenuComponent implements OnInit {
           {title:"Directive Custom Demo", url:'/demo_05', isVisible:true}
         ]},
         {title:"Input Output Demo", url : "/demo_06", isVisible : true},
-        {title:"Service Demo", url : "/demo_07", isVisible : true}
+        {title:"Service Demo", url : "/demo_07", isVisible : true},
+        {title:"Form Demo", url : "/demo_08", isVisible : true}
       ],
       imgSrc:"assets/home-icon.png"},
       {title:"Exercices", url: "/exos", isVisible:true, children:[
