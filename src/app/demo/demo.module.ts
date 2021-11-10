@@ -12,6 +12,7 @@ import { DemoDirectStructComponent } from './components/demo-direct-struct/demo-
 import { DemoDirectCustomComponent } from './components/demo-direct-custom/demo-direct-custom.component';
 import { InputOutputMainComponent } from './components/input-output-main/input-output-main.component';
 import { InputOutputListComponent } from './components/input-output-list/input-output-list.component';
+import { DemoServiceComponent } from '../demo/components/demo-service/demo-service.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { InputOutputListComponent } from './components/input-output-list/input-o
     DemoDirectStructComponent,
     DemoDirectCustomComponent,
     InputOutputMainComponent,
-    InputOutputListComponent
+    InputOutputListComponent,
+    DemoServiceComponent
   ],
   imports: [
     CommonModule,
