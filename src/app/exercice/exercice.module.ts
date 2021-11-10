@@ -8,6 +8,8 @@ import { ExosChronoComponent } from '../exercice/components/exos-chrono/exos-chr
 import { ShoppingMainComponent } from '../exercice/components/shopping-main/shopping-main.component';
 import { FormsModule } from '@angular/forms';
 import { ShoppingListComponent } from '../exercice/components/shopping-list/shopping-list.component';
+import { ShoppingMain2Component } from '../exercice/components/shopping-main2/shopping-main2.component';
+import { ShoppingList2Component } from '../exercice/components/shopping-list2/shopping-list2.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ShoppingListComponent } from '../exercice/components/shopping-list/shop
     MainExerciceComponent,
     ExosChronoComponent,
     ShoppingMainComponent,
-    ShoppingListComponent
+    ShoppingListComponent,
+    ShoppingMain2Component,
+    ShoppingList2Component
   ],
   imports: [
     CommonModule,
