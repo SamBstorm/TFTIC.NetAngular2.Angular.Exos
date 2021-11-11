@@ -16,15 +16,15 @@
     <h5>Gender : </h5>
     <label [for]="prefix +'genderM'">
         Male
-        <input [name]="prefix +'gender'" [id]="prefix +'genderM'" type="radio" value="Male" formControlName="gender">
+        <input  [id]="prefix +'genderM'" type="radio" value="Male" formControlName="gender">
     </label>
     <label [for]="prefix +'genderF'">
         Female
-        <input [name]="prefix +'gender'" [id]="prefix +'genderF'" type="radio" value="Female" formControlName="gender">
+        <input  [id]="prefix +'genderF'" type="radio" value="Female" formControlName="gender">
     </label>
     <label [for]="prefix +'genderO'">
         Other
-        <input [name]="prefix +'gender'" [id]="prefix +'genderO'" type="radio" value="Other" formControlName="gender">
+        <input  [id]="prefix +'genderO'" type="radio" value="Other" formControlName="gender">
     </label>
     <div  *ngIf="!form.controls['gender'].valid  && form.controls['gender'].touched">Veuillez selectionner un Genre</div>
 </div>
