@@ -1,0 +1,8 @@
+<h1>{{fan.name}}</h1>
+<h3>{{fan.birthdate | date:'dd-MM-yyyy'}}</h3>
+
+<ul>
+    <li *ngFor="let title of fan.titles">{{title}}</li>
+</ul>
+
+<a [routerLink]="'/exos/fan/'+fan.name+'/edit'">Edit...</a>

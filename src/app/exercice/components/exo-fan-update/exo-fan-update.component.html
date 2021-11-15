@@ -1,0 +1,18 @@
+<h1>Update {{fan.name}}</h1>
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <fieldset>
+        <legend>User</legend>
+        <div><label for="name">Name : </label> <input type="text" formControlName="name"></div>
+        <div><label for="birthdate">Birth Date : </label> <input type="date" formControlName="birthdate"></div>
+    </fieldset>
+    <fieldset>
+        <legend>Titles</legend>
+        <div><input type="text" [(ngModel)]="newTitle" [ngModelOptions]="{standalone: true}">
+        <input type="button" value="+" (click)="addNewTitle()">
+        </div>
+        <ul>
+            <li *ngFor="let title of titlesArray.value">{{title}}</li>
+        </ul>
+    </fieldset>
+    <input type="submit" value="Save" [disabled]="!editForm.valid">
+</form>

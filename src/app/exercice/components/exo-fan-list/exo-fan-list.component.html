@@ -1,0 +1,10 @@
+<h1>Liste des fan de séries!</h1>
+<a routerLink="/exos/fan/create">New fan?</a>
+<ul>
+    <li *ngFor="let fan of fans">
+        <a [routerLink]="'/exos/fan/'+fan.name">
+            <div>{{fan.name}}</div>
+        </a>
+       <input type="button" value="-" (click)="deleteFan(fan.name)">
+    </li>
+</ul>
