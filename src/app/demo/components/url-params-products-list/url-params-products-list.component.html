@@ -1,0 +1,17 @@
+<h1>All products</h1>
+<ul>
+    <li *ngFor="let product of filteredProducts">
+        <a [routerLink]="'/demo/product/'+product.ref">
+            <div>
+                {{product.name}}
+            </div>
+        </a>
+    </li>
+</ul>
+<div>
+    <label>Min(€)</label><input type="number" [min]="minPrice" [max]="maxPrice" [(ngModel)]="minUserPrice">
+</div>
+<div>
+    <label>Max(€)</label><input type="number" [min]="minPrice" [max]="maxPrice" [(ngModel)]="maxUserPrice">
+</div>
+<input type="button" (click)="refreshFilter()" value="Filter">

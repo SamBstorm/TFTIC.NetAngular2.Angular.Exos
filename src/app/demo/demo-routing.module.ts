@@ -9,6 +9,10 @@ import { DemoPipeComponent } from './components/demo-pipe/demo-pipe.component';
 import { DemoServiceComponent } from './components/demo-service/demo-service.component';
 import { InputOutputMainComponent } from './components/input-output-main/input-output-main.component';
 import { MainDemoComponent } from './components/main-demo/main-demo.component';
+import { UrlParamsProductComponent } from './components/url-params-product/url-params-product.component';
+import { UrlParamsProductsListComponent } from './components/url-params-products-list/url-params-products-list.component';
+import { UrlParamsComponent } from './components/url-params/url-params.component';
+import { UsernameGuard } from './guards/username.guard';
 
 const routes: Routes = [
   {path:'', redirectTo:'main', pathMatch:'full'},
@@ -20,7 +24,11 @@ const routes: Routes = [
   {path:'demo_05', component:DemoDirectCustomComponent},
   {path:'demo_06', component:InputOutputMainComponent},
   {path:'demo_07', component:DemoServiceComponent},
-  {path:'demo_08', component:DemoFormComponent}
+  {path:'demo_08', component:DemoFormComponent},
+  {path:'demo_09/:message/:name', component:UrlParamsComponent},
+  {path:'demo_10', component:UrlParamsProductsListComponent},
+  {path:'product/:id', component:UrlParamsProductComponent},  
+  {path:'demo_11', component:DemoServiceComponent, canActivate: [UsernameGuard]}
 ];
 
 @NgModule({
