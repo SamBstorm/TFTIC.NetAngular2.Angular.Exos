@@ -20,6 +20,8 @@ import { UrlParamsProductComponent } from '../demo/components/url-params-product
 import { UrlParamsProductsListComponent } from '../demo/components/url-params-products-list/url-params-products-list.component';
 import { DemoSessionServiceComponent } from './components/demo-session-service/demo-session-service.component';
 import { DemoRandomUserAPIComponent } from './components/demo-random-user-api/demo-random-user-api.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HeaderTotoInterceptor } from '../interceptors/header-toto.interceptor';
 
 
 @NgModule({
@@ -47,7 +49,6 @@ import { DemoRandomUserAPIComponent } from './components/demo-random-user-api/de
     ReactiveFormsModule,
     SharedModule
   ],
-  providers: [],
   bootstrap:[MainDemoComponent]
 })
 export class DemoModule { }

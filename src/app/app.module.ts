@@ -9,7 +9,8 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SharedModule } from './shared/shared.module';
 import { NavItemComponent } from './components/nav-item/nav-item.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HeaderTotoInterceptor } from './interceptors/header-toto.interceptor';
 
 @NgModule({
   declarations: [
@@ -24,8 +25,9 @@ import { HttpClient } from '@angular/common/http';
     DemoRoutingModule,
     ExerciceRoutingModule,
     SharedModule
+  ],providers: [
+    {provide: HTTP_INTERCEPTORS, useClass:HeaderTotoInterceptor, multi:true}
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
