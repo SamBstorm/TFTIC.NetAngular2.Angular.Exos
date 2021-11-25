@@ -18,6 +18,7 @@ import { DemoPersonFormComponent } from '../demo/components/demo-person-form/dem
 import { UrlParamsComponent } from '../demo/components/url-params/url-params.component';
 import { UrlParamsProductComponent } from '../demo/components/url-params-product/url-params-product.component';
 import { UrlParamsProductsListComponent } from '../demo/components/url-params-products-list/url-params-products-list.component';
+import { DemoSessionServiceComponent } from './components/demo-session-service/demo-session-service.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { UrlParamsProductsListComponent } from '../demo/components/url-params-pr
     DemoPersonFormComponent,
     UrlParamsComponent,
     UrlParamsProductComponent,
-    UrlParamsProductsListComponent
+    UrlParamsProductsListComponent,
+    DemoSessionServiceComponent
   ],
   imports: [
     CommonModule,

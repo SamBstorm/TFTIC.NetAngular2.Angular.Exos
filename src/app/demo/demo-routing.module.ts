@@ -7,6 +7,7 @@ import { DemoDirectStructComponent } from './components/demo-direct-struct/demo-
 import { DemoFormComponent } from './components/demo-form/demo-form.component';
 import { DemoPipeComponent } from './components/demo-pipe/demo-pipe.component';
 import { DemoServiceComponent } from './components/demo-service/demo-service.component';
+import { DemoSessionServiceComponent } from './components/demo-session-service/demo-session-service.component';
 import { InputOutputMainComponent } from './components/input-output-main/input-output-main.component';
 import { MainDemoComponent } from './components/main-demo/main-demo.component';
 import { UrlParamsProductComponent } from './components/url-params-product/url-params-product.component';
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path:'demo_09/:message/:name', component:UrlParamsComponent},
   {path:'demo_10', component:UrlParamsProductsListComponent},
   {path:'product/:id', component:UrlParamsProductComponent},  
-  {path:'demo_11', component:DemoServiceComponent, canActivate: [UsernameGuard]}
+  {path:'demo_11', component:DemoServiceComponent, canActivate: [UsernameGuard]},
+  {path:'demo_12', component:DemoSessionServiceComponent}
 ];
 
 @NgModule({
