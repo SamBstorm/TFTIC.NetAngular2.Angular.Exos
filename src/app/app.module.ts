@@ -9,6 +9,7 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SharedModule } from './shared/shared.module';
 import { NavItemComponent } from './components/nav-item/nav-item.component';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [

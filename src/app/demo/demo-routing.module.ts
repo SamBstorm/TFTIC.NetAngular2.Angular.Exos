@@ -6,6 +6,7 @@ import { DemoDirectCustomComponent } from './components/demo-direct-custom/demo-
 import { DemoDirectStructComponent } from './components/demo-direct-struct/demo-direct-struct.component';
 import { DemoFormComponent } from './components/demo-form/demo-form.component';
 import { DemoPipeComponent } from './components/demo-pipe/demo-pipe.component';
+import { DemoRandomUserAPIComponent } from './components/demo-random-user-api/demo-random-user-api.component';
 import { DemoServiceComponent } from './components/demo-service/demo-service.component';
 import { DemoSessionServiceComponent } from './components/demo-session-service/demo-session-service.component';
 import { InputOutputMainComponent } from './components/input-output-main/input-output-main.component';
@@ -30,7 +31,8 @@ const routes: Routes = [
   {path:'demo_10', component:UrlParamsProductsListComponent},
   {path:'product/:id', component:UrlParamsProductComponent},  
   {path:'demo_11', component:DemoServiceComponent, canActivate: [UsernameGuard]},
-  {path:'demo_12', component:DemoSessionServiceComponent}
+  {path:'demo_12', component:DemoSessionServiceComponent},
+  {path:'demo_13', component:DemoRandomUserAPIComponent}
 ];
 
 @NgModule({

@@ -19,6 +19,7 @@ import { UrlParamsComponent } from '../demo/components/url-params/url-params.com
 import { UrlParamsProductComponent } from '../demo/components/url-params-product/url-params-product.component';
 import { UrlParamsProductsListComponent } from '../demo/components/url-params-products-list/url-params-products-list.component';
 import { DemoSessionServiceComponent } from './components/demo-session-service/demo-session-service.component';
+import { DemoRandomUserAPIComponent } from './components/demo-random-user-api/demo-random-user-api.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { DemoSessionServiceComponent } from './components/demo-session-service/d
     UrlParamsComponent,
     UrlParamsProductComponent,
     UrlParamsProductsListComponent,
-    DemoSessionServiceComponent
+    DemoSessionServiceComponent,
+    DemoRandomUserAPIComponent
   ],
   imports: [
     CommonModule,
@@ -45,6 +47,7 @@ import { DemoSessionServiceComponent } from './components/demo-session-service/d
     ReactiveFormsModule,
     SharedModule
   ],
+  providers: [],
   bootstrap:[MainDemoComponent]
 })
 export class DemoModule { }

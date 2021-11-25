@@ -28,7 +28,8 @@ export class NavigationMenuComponent implements OnInit {
         {title:"Url parameters Demo", url : "/demo_09/defaultMessage/Samuel?id=42", isVisible : true},
         {title:"Url parameters Demo Product list", url : "/demo_10", isVisible : true},
         {title:"Guard Demo", url : "/demo_11", isVisible : true},
-        {title:"Session Storage Demo", url : "/demo_12", isVisible : true}
+        {title:"Session Storage Demo", url : "/demo_12", isVisible : true},
+        {title:"RandomUser API Demo", url : "/demo_13", isVisible : true}
       ],
       imgSrc:"assets/home-icon.png"},
       {title:"Exercices", url: "/exos", isVisible:true, children:[
